@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(238, 235, 232);
+}
+
+
+
+
+/* header styling  */
+
+
+.header{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    min-height: 8vh;
+
+}
+
+
+.header-btn{
+    margin-left: 10px;
+}
+
+.personal{
+    border: 0.2px solid black;
+    padding: 5px 10px;
+    color: #0488C1;
+}
+.business{
+    border: 0.2px solid black;
+    padding: 5px 10px;
+    color: #0488C1;
+
+}
+.contact{
+    display: none;
+}
+.header-right{
+    display: none;
+}
+
+
+
+
+/* body----------------------- */
+
+.body{
+    margin: 25px 10px;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+
+
+img{
+    width: 100% !important;
+}
+
+
+
+.form{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+    padding: 10px 40px 10px 10px;
+}
+
+input{
+    height: 2rem;
+}
+
+.input-signin{
+   display: grid;
+   grid-template-columns: 100% 0%;
+   gap: 8px;
+   align-items: center;
+}
+
+.input-remember-password{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#remember-password{
+    width: 8%;
+}
+
+.body-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: rgb(238, 235, 232);
+
+}
+
+.body-btn a{
+    text-decoration: none;
+    color: rgb(203, 189, 189);
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.password{
+    text-align: center;
+    font-size: small;
+    margin-top: 10px !important;
+    line-height: 2.0;
+    
+    
+}
+.password a {
+    text-decoration: none;
+    color: #0488C1;
+}
+
+
+
+.hr-2{
+    display: none;
+}
+
+
+/* footer */
+
+.footer-shaw{
+    background-color: rgb(36, 30, 30);
+    padding: 30px !important;
+
+}
+
+.privacyandothers{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    text-decoration: underline;
+}
+.shaw-communication{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: small;
+}
+
+
+
+
+
+/* ------------media query for 1080----------------- */
+
+
+
+@media only screen and (min-width:1080px){
+
+
+
+    .contact{
+        display: contents;
+        display: flex;
+        gap: 10px;
+        
+    }
+
+    .contact h3{
+        font-weight: 100;
+        color:#0488C1; 
+        font-size: small;
+    }
+    .header-left{
+        display: flex;
+        gap: 30px;
+    }
+    .header-btn{
+        font-size: small;
+    }
+
+    .header-right{
+        display: contents;
+        color:#0488C1;
+    
+    }
+
+    .header-right h3 {
+        font-size: small;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    /* ------------body----------- */
+
+    .body-shaw{
+        display: flex;
+        
+    }
+    .body-shaw-contents{
+        width: 75%;
+    }
+    
+    .hr-2{
+        display: content;
+    }
+
+    .body{
+        margin: 0.5rem 18rem;
+        margin-bottom: 30px;
+    }
+    .shaw-image{
+        width: 70%;
+    }
+    .form{
+        padding-left: 30px !important;
+    }
+    input{
+        height: 2.5rem;
+        width: 60%;
+    }
+    .input-signin {
+        display: grid;
+        grid-template-columns: 65% 35%;
+
+
+       
+    }
+
+    .input-signin input{
+        width: 92%;
+    }
+
+    #remember-password{
+        width: 20px;
+    }
+
+    .input-remember-password span{
+        font-size: small;
+        font-weight: 100;
+    }
+
+    .body-btn{
+        width: 40%;
+        margin-left: 100px;
+        height: 50px;
+    }
+    .password{
+        padding-left: 30px;
+        display: grid;
+        grid-template-rows: auto;
+        margin-right: 15rem;
+        
+    }
+    
+
+    /* ----------footer------------- */
+
+
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+
+    }
+
+    .shaw-communication p{
+        font-size: x-small;
+    }
+    .privacyandothers{
+        font-size: small;
+    }
+
+
+
+
+
+}
+
